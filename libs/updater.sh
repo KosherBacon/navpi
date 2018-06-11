@@ -63,7 +63,7 @@ fi
 
 echo "Removing old files"
 rm -rf /home/stakebox/navcoin-${installed}
-rm -rf /usr/local/bin/navcoind
+rm -rf /usr/local/bin/nebliod
 
 echo "Expanding new version"
 tar zxvf navcoin-${tag}-arm-linux-gnueabihf.tar.gz -C /home/stakebox/
@@ -71,7 +71,7 @@ rm navcoin-${tag}-arm-linux-gnueabihf.tar.gz
 
 echo "Copying to the startup location"
 cp /home/stakebox/navcoin-${tag}/bin/navcoind /usr/local/bin/navcoind
-chmod +x /usr/local/bin/navcoind
+chmod +x /usr/local/bin/nebliod
 chmod a+w /home/stakebox/UI
 echo "NavCoin has Successfully updated to the latest version"
 echo "{\"last_run\":\"${now}\",\"success\":true,\"code\":\"UPDATE_INSTALLED\"}" > /home/stakebox/UI/update.json
