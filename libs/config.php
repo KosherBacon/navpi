@@ -8,7 +8,7 @@
 		"host" => "localhost",     
 		"port" => 6326,
 		"protocol" => "http",
-		"ticker" => "NAV"
+		"ticker" => "NEBL"
 	);
 
 ?>
