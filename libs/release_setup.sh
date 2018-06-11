@@ -13,7 +13,7 @@ echo -n "Starting NavPi $VERSION Release Script: " > $LOG_FILE
 date >> $LOG_FILE
 
 echo "Killing daemon" >> $LOG_FILE
-killall navcoind >> $LOG_FILE
+killall nebliod >> $LOG_FILE
 
 #echo "Deleting old blockchain" >> $LOG_FILE
 #sudo rm -rfv /home/stakebox/.navcoin4/chainstate  && sudo rm -rf /home/stakebox/.navcoin4/blocks
